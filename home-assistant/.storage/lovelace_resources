@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "id": "b0e777fa2c214d768c2226b5e203926c",
+        "url": "/local/card-mod.js",
+        "type": "module"
+      },
+      {
+        "id": "f14add4c97804c2d8bf0626a91828f8d",
+        "url": "/local/community/bubble-card/bubble-card.js",
+        "type": "module"
+      }
+    ]
+  }
+}

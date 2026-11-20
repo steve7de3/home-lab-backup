@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.cameras_wall",
+  "data": {
+    "config": {
+      "title": "Cameras",
+      "views": [
+        {
+          "cards": [
+            {
+              "cards": [
+                {
+                  "aspect_ratio": "4:1",
+                  "camera_image": "camera.driveway_fluent",
+                  "camera_view": "live",
+                  "entities": [
+                    {
+                      "entity": "binary_sensor.driveway_person"
+                    },
+                    {
+                      "entity": "binary_sensor.driveway_vehicle"
+                    },
+                    {
+                      "entity": "binary_sensor.driveway_motion"
+                    }
+                  ],
+                  "fit_mode": "cover",
+                  "title": "Driveway",
+                  "type": "picture-glance"
+                },
+                {
+                  "cards": [
+                    {
+                      "cards": [
+                        {
+                          "aspect_ratio": "21:9",
+                          "camera_image": "camera.entryway_balanced",
+                          "camera_view": "live",
+                          "entities": [
+                            {
+                              "entity": "binary_sensor.entryway_person"
+                            },
+                            {
+                              "entity": "binary_sensor.entryway_motion"
+                            }
+                          ],
+                          "title": "Entryway",
+                          "type": "picture-glance",
+                          "card_mod": {
+                            "style": {
+                              "hui-image $ ha-camera-stream $ ha-web-rtc-player $": "video { object-fit: cover !important; }",
+                              "hui-image $ ha-camera-stream $ ha-hls-player $": "video { object-fit: cover !important; }",
+                              "hui-image $": "#image, img { object-fit: cover !important; }"
+                            }
+                          }
+                        },
+                        {
+                          "aspect_ratio": "21:9",
+                          "camera_image": "camera.side_house_fluent",
+                          "camera_view": "live",
+                          "entities": [
+                            {
+                              "entity": "binary_sensor.side_house_person"
+                            },
+                            {
+                              "entity": "binary_sensor.side_house_motion"
+                            }
+                          ],
+                          "title": "Side House",
+                          "type": "picture-glance",
+                          "card_mod": {
+                            "style": {
+                              "hui-image $ ha-camera-stream $ ha-web-rtc-player $": "video { object-fit: cover !important; transform: scale(1.15) translateY(-3%); transform-origin: center center; }",
+                              "hui-image $ ha-camera-stream $ ha-hls-player $": "video { object-fit: cover !important; transform: scale(1.15) translateY(-3%); transform-origin: center center; }",
+                              "hui-image $": "#image, img { object-fit: cover !important; }"
+                            }
+                          }
+                        }
+                      ],
+                      "type": "vertical-stack"
+                    },
+                    {
+                      "cards": [
+                        {
+                          "aspect_ratio": "21:9",
+                          "camera_image": "camera.garage_balanced_2",
+                          "camera_view": "live",
+                          "entities": [
+                            {
+                              "entity": "binary_sensor.garage_motion"
+                            }
+                          ],
+                          "title": "Garage (Reolink)",
+                          "type": "picture-glance",
+                          "card_mod": {
+                            "style": {
+                              "hui-image $ ha-camera-stream $ ha-web-rtc-player $": "video { object-fit: cover !important; }",
+                              "hui-image $ ha-camera-stream $ ha-hls-player $": "video { object-fit: cover !important; }",
+                              "hui-image $": "#image, img { object-fit: cover !important; }"
+                            }
+                          }
+                        }
+                      ],
+                      "type": "vertical-stack"
+                    },
+                    {
+                      "cards": [
+                        {
+                          "aspect_ratio": "21:9",
+                          "camera_image": "camera.left_corner_balanced",
+                          "camera_view": "live",
+                          "entities": [
+                            {
+                              "entity": "binary_sensor.left_corner_person"
+                            },
+                            {
+                              "entity": "binary_sensor.left_corner_motion"
+                            }
+                          ],
+                          "title": "Left Corner",
+                          "type": "picture-glance",
+                          "card_mod": {
+                            "style": {
+                              "hui-image $ ha-camera-stream $ ha-web-rtc-player $": "video { object-fit: cover !important; }",
+                              "hui-image $ ha-camera-stream $ ha-hls-player $": "video { object-fit: cover !important; }",
+                              "hui-image $": "#image, img { object-fit: cover !important; }"
+                            }
+                          }
+                        },
+                        {
+                          "aspect_ratio": "21:9",
+                          "camera_image": "camera.front_door_fluent",
+                          "camera_view": "live",
+                          "entities": [],
+                          "title": "Front Door",
+                          "type": "picture-glance",
+                          "card_mod": {
+                            "style": {
+                              "hui-image $ ha-camera-stream $ ha-web-rtc-player $": "video { object-fit: cover !important; }",
+                              "hui-image $ ha-camera-stream $ ha-hls-player $": "video { object-fit: cover !important; }",
+                              "hui-image $": "#image, img { object-fit: cover !important; }"
+                            }
+                          }
+                        }
+                      ],
+                      "type": "vertical-stack"
+                    }
+                  ],
+                  "type": "horizontal-stack"
+                }
+              ],
+              "type": "vertical-stack"
+            }
+          ],
+          "icon": "mdi:cctv",
+          "panel": true,
+          "path": "cameras",
+          "theme": "wall_dark",
+          "title": "Cameras"
+        }
+      ]
+    }
+  }
+}

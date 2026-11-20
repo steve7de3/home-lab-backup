@@ -1,0 +1,1075 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_home",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "picture-elements",
+              "elements": [
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "51%",
+                    "top": "12%"
+                  },
+                  "entity": "light.bedroom_bedroom_lamp_1"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "61%",
+                    "top": "11%"
+                  },
+                  "entity": "light.bedroom_bedroom_lamp_2"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "57%",
+                    "top": "23%"
+                  },
+                  "entity": "light.bedroom_bedroom"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "40%",
+                    "top": "71%"
+                  },
+                  "entity": "light.garage_garage"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "17%",
+                    "top": "44%"
+                  },
+                  "entity": "light.living_room_1_of_3"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "19%",
+                    "top": "27%"
+                  },
+                  "entity": "light.living_room_2_of_3"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "69%",
+                    "top": "38%"
+                  },
+                  "entity": "light.hallway_light_hallway_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "68%",
+                    "top": "65%"
+                  },
+                  "entity": "light.entry_way_light_entry_way_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "41%",
+                    "top": "45%"
+                  },
+                  "entity": "light.dining_room_light_dining_room_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "42%",
+                    "top": "21%"
+                  },
+                  "entity": "light.kitchen_light_kitchen_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "31%",
+                    "top": "97%"
+                  },
+                  "entity": "camera.driveway_fluent",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "57%",
+                    "top": "84%"
+                  },
+                  "entity": "camera.entryway_fluent",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "46%",
+                    "top": "62%"
+                  },
+                  "entity": "camera.garage_live_view",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "71%",
+                    "top": "86%"
+                  },
+                  "entity": "camera.front_door_live_view",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "31%",
+                    "top": "30%"
+                  },
+                  "entity": "camera.living_room_live_view",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "49%",
+                    "top": "96%"
+                  },
+                  "entity": "camera.left_corner_fluent",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "95%",
+                    "top": "12%"
+                  },
+                  "entity": "camera.side_house_fluent",
+                  "icon": "mdi:cctv"
+                }
+              ],
+              "image": {
+                "media_content_id": "media-source://media_source/local/file_00000000e99c81fba08b5e77a94e3a5b.png",
+                "media_content_type": "image/png",
+                "metadata": {
+                  "title": "file_00000000e99c81fba08b5e77a94e3a5b.png",
+                  "thumbnail": null,
+                  "media_class": "image",
+                  "children_media_class": null,
+                  "navigateIds": [
+                    {},
+                    {
+                      "media_content_type": "app",
+                      "media_content_id": "media-source://media_source"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.bedroom_bedroom",
+                "light.bedroom_hue_play_gradient_lightstrip_1",
+                {
+                  "entity": "light.bedroom_bedroom_lamp_1",
+                  "name": "Lamp 1"
+                },
+                {
+                  "entity": "light.bedroom_bedroom_lamp_2",
+                  "name": "Lamp 2"
+                }
+              ],
+              "title": "Bedroom",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.bedroom_bedroom_bedroom",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bedroom"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_spring_blossom",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Spring blossom"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_savanna_sunset",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Savanna sunset"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_tropical_twilight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Tropical twilight"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_energize",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Energize"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_nightlight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Nightlight"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_set_the_mood",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Set the mood"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_read",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Read"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_relax",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Relax"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_arctic_aurora",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Arctic aurora"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_dimmed",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dimmed"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  },
+                  {
+                    "entity": "scene.bedroom_bedroom_concentrate",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Concentrate"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.bedroom_2_bedroom_2",
+                "light.bedroom_2_hue_play_gradient_lightstrip_2"
+              ],
+              "title": "Bedroom 2",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.bedroom_2_bedroom_2_precious",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Precious"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.dining_room_light_dining_room_light_1",
+                  "name": "1"
+                },
+                {
+                  "entity": "light.dining_room_light_dining_room_light_2",
+                  "name": "2"
+                },
+                "light.dining_room_light_dining_room_light"
+              ],
+              "title": "dining room light",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_relax",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Relax"
+                  },
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_nightlight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Nightlight"
+                  },
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_savanna_sunset",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Savanna sunset"
+                  },
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  },
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_energize",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Energize"
+                  },
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_concentrate",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Concentrate"
+                  },
+                  {
+                    "entity": "scene.dining_room_light_dining_room_light_dimmed",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dimmed"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.kitchen_light_kitchen_light_1",
+                  "name": "1"
+                },
+                {
+                  "entity": "light.kitchen_light_kitchen_light_2",
+                  "name": "2"
+                },
+                {
+                  "entity": "light.kitchen_light_kitchen_light_3",
+                  "name": "3"
+                },
+                {
+                  "entity": "light.kitchen_light_kitchen_light_4",
+                  "name": "4"
+                },
+                "light.kitchen_light_kitchen_light"
+              ],
+              "title": "kitchen light",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_savanna_sunset",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Savanna sunset"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_concentrate",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Concentrate"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_energize",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Energize"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_read",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Read"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_relax",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Relax"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_spring_blossom",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Spring blossom"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_nightlight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Nightlight"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_tropical_twilight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Tropical twilight"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_dimmed",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dimmed"
+                  },
+                  {
+                    "entity": "scene.kitchen_light_kitchen_light_arctic_aurora",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Arctic aurora"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.hallway_light_hallway_light",
+                "light.hallway_light_hallway_light_2",
+                {
+                  "entity": "sensor.hallway_light_hallway_light_illuminance",
+                  "name": "Illuminance"
+                },
+                {
+                  "entity": "binary_sensor.hallway_light_hallway_light_motion",
+                  "name": "Motion"
+                },
+                {
+                  "entity": "sensor.hallway_light_hallway_light_sensor_1_illuminance",
+                  "name": "Sensor 1 Illuminance"
+                },
+                {
+                  "entity": "binary_sensor.hallway_light_hallway_light_sensor_1_motion",
+                  "name": "Sensor 1 Motion"
+                },
+                {
+                  "entity": "sensor.hallway_light_hallway_light_sensor_1_temperature",
+                  "name": "Sensor 1 Temperature"
+                },
+                {
+                  "entity": "sensor.hallway_light_hallway_light_sensor_2_illuminance",
+                  "name": "Sensor 2 Illuminance"
+                },
+                {
+                  "entity": "binary_sensor.hallway_light_hallway_light_sensor_2_motion",
+                  "name": "Sensor 2 Motion"
+                },
+                {
+                  "entity": "sensor.hallway_light_hallway_light_sensor_2_temperature",
+                  "name": "Sensor 2 Temperature"
+                }
+              ],
+              "title": "hallway light",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.hallway_light_hallway_light_nightlight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Nightlight"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_energize",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Energize"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_spring_blossom",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Spring blossom"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_arctic_aurora",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Arctic aurora"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_tropical_twilight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Tropical twilight"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_concentrate",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Concentrate"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_savanna_sunset",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Savanna sunset"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_relax",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Relax"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_dimmed",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dimmed"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  },
+                  {
+                    "entity": "scene.hallway_light_hallway_light_read",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Read"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.living_room_light_living_room_light",
+                "light.living_room_light_living_room_lights",
+                "light.living_room_light_living_room_lights_2",
+                "light.living_room_light_living_room_lights_3",
+                "light.living_room_light_living_room_lights_4",
+                "light.living_room_light_living_room_lights_5",
+                "light.living_room_light_living_room_lights_6"
+              ],
+              "title": "Living room light",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.living_room_light_living_room_light_arctic_aurora",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Arctic aurora"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_tropical_twilight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Tropical twilight"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_relax",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Relax"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_dim_blue",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dim blue"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_spring_blossom",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Spring blossom"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_read",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Read"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_concentrate",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Concentrate"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_dimmed",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dimmed"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_energize",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Energize"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  },
+                  {
+                    "entity": "scene.living_room_light_living_room_light_nightlight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Nightlight"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.entry_way_light_entry_way_light",
+                "light.entry_way_light_entryway_lights",
+                "light.entry_way_light_entryway_lights_2"
+              ],
+              "title": "entry way light",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_savanna_sunset",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Savanna sunset"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_dimmed",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Dimmed"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_energize",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Energize"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_read",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Read"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_tropical_twilight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Tropical twilight"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_arctic_aurora",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Arctic aurora"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_nightlight",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Nightlight"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_relax",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Relax"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_concentrate",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Concentrate"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  },
+                  {
+                    "entity": "scene.entry_way_light_entry_way_light_spring_blossom",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Spring blossom"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.garage_garage"
+              ],
+              "title": "Garage",
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "scene.garage_garage_bright",
+                    "show_icon": true,
+                    "show_name": true,
+                    "name": "Bright"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "person.steve"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.extended_color_light_1",
+                "light.extended_color_light_2",
+                "light.hue_smart_plug_1"
+              ],
+              "title": "Light"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.rivian_phone_key_7bb2_estimated_distance",
+                "sensor.rivian_phone_key_52aa_estimated_distance",
+                "sensor.rivian_sensor_2_4704_estimated_distance",
+                "sensor.sd138db61b82d2bd9c_d39a_estimated_distance"
+              ],
+              "title": "Sensor"
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.forecast_home",
+              "show_forecast": false
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "light.driveway_floodlight",
+                      "name": "Floodlight"
+                    },
+                    {
+                      "entity": "siren.driveway_siren",
+                      "name": "Siren"
+                    },
+                    {
+                      "entity": "binary_sensor.driveway_motion",
+                      "name": "Motion"
+                    },
+                    {
+                      "entity": "binary_sensor.driveway_person",
+                      "name": "Person"
+                    },
+                    {
+                      "entity": "binary_sensor.driveway_pet",
+                      "name": "Pet"
+                    },
+                    {
+                      "entity": "binary_sensor.driveway_vehicle",
+                      "name": "Vehicle"
+                    }
+                  ],
+                  "title": "driveway"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.driveway_fluent"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "binary_sensor.entryway_motion",
+                      "name": "Motion"
+                    },
+                    {
+                      "entity": "binary_sensor.entryway_person",
+                      "name": "Person"
+                    },
+                    {
+                      "entity": "binary_sensor.entryway_vehicle",
+                      "name": "Vehicle"
+                    }
+                  ],
+                  "title": "entryway"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.entryway_fluent"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "switch.front_door_in_home_chime",
+                      "name": "In-home chime"
+                    },
+                    {
+                      "entity": "switch.front_door_motion_detection",
+                      "name": "Motion detection"
+                    },
+                    {
+                      "entity": "number.front_door_volume",
+                      "name": "Volume"
+                    },
+                    {
+                      "entity": "sensor.front_door_last_activity",
+                      "name": "Last activity"
+                    }
+                  ],
+                  "title": "Front Door"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.front_door_live_view"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "number.garage_focus",
+                      "name": "Focus"
+                    },
+                    {
+                      "entity": "number.garage_zoom",
+                      "name": "Zoom"
+                    },
+                    {
+                      "entity": "binary_sensor.garage_motion",
+                      "name": "Motion"
+                    }
+                  ],
+                  "title": "garage"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.garage_fluent"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "switch.garage_motion_detection",
+                      "name": "Motion detection"
+                    },
+                    {
+                      "entity": "siren.garage_siren",
+                      "name": "Siren"
+                    },
+                    {
+                      "entity": "number.garage_volume",
+                      "name": "Volume"
+                    },
+                    {
+                      "entity": "sensor.garage_last_activity",
+                      "name": "Last activity"
+                    }
+                  ],
+                  "title": "garage"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.garage_live_view"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "binary_sensor.hue_bridge_entertainment_area_entertainment_area_1",
+                  "name": "Entertainment area Entertainment area 1"
+                },
+                {
+                  "entity": "binary_sensor.hue_bridge_entertainment_area_tv_area",
+                  "name": "Entertainment area TV area"
+                }
+              ],
+              "title": "Hue Bridge"
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "binary_sensor.left_corner_motion",
+                      "name": "Motion"
+                    },
+                    {
+                      "entity": "binary_sensor.left_corner_person",
+                      "name": "Person"
+                    },
+                    {
+                      "entity": "binary_sensor.left_corner_vehicle",
+                      "name": "Vehicle"
+                    }
+                  ],
+                  "title": "left corner"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.left_corner_fluent"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "switch.living_room_motion_detection",
+                      "name": "Motion detection"
+                    },
+                    {
+                      "entity": "siren.living_room_siren",
+                      "name": "Siren"
+                    },
+                    {
+                      "entity": "number.living_room_volume",
+                      "name": "Volume"
+                    },
+                    {
+                      "entity": "sensor.living_room_last_activity",
+                      "name": "Last activity"
+                    }
+                  ],
+                  "title": "Living Room"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.living_room_live_view"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "siren.master_bedroom_siren",
+                  "name": "Siren"
+                },
+                {
+                  "entity": "number.master_bedroom_volume",
+                  "name": "Volume"
+                }
+              ],
+              "title": "master bedroom"
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "light.side_house_floodlight",
+                      "name": "Floodlight"
+                    },
+                    {
+                      "entity": "siren.side_house_siren",
+                      "name": "Siren"
+                    },
+                    {
+                      "entity": "binary_sensor.side_house_motion",
+                      "name": "Motion"
+                    },
+                    {
+                      "entity": "binary_sensor.side_house_person",
+                      "name": "Person"
+                    },
+                    {
+                      "entity": "binary_sensor.side_house_pet",
+                      "name": "Pet"
+                    },
+                    {
+                      "entity": "binary_sensor.side_house_vehicle",
+                      "name": "Vehicle"
+                    }
+                  ],
+                  "title": "side house"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.side_house_fluent"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

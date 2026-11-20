@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_floorplan",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "type": "panel",
+          "path": "",
+          "cards": [
+            {
+              "type": "picture-elements",
+              "elements": [
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "51%",
+                    "top": "12%"
+                  },
+                  "entity": "light.bedroom_bedroom_lamp_1"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "61%",
+                    "top": "11%"
+                  },
+                  "entity": "light.bedroom_bedroom_lamp_2"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "57%",
+                    "top": "23%"
+                  },
+                  "entity": "light.bedroom_bedroom"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "40%",
+                    "top": "71%"
+                  },
+                  "entity": "light.garage_garage"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "17%",
+                    "top": "44%"
+                  },
+                  "entity": "light.living_room_1_of_3"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "19%",
+                    "top": "27%"
+                  },
+                  "entity": "light.living_room_2_of_3"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "69%",
+                    "top": "38%"
+                  },
+                  "entity": "light.hallway_light_hallway_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "68%",
+                    "top": "65%"
+                  },
+                  "entity": "light.entry_way_light_entry_way_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "41%",
+                    "top": "45%"
+                  },
+                  "entity": "light.dining_room_light_dining_room_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "42%",
+                    "top": "21%"
+                  },
+                  "entity": "light.kitchen_light_kitchen_light"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "31%",
+                    "top": "97%"
+                  },
+                  "entity": "camera.driveway_fluent",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "57%",
+                    "top": "84%"
+                  },
+                  "entity": "camera.entryway_fluent",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "46%",
+                    "top": "62%"
+                  },
+                  "entity": "camera.garage_live_view",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "71%",
+                    "top": "86%"
+                  },
+                  "entity": "camera.front_door_live_view",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "31%",
+                    "top": "30%"
+                  },
+                  "entity": "camera.living_room_live_view",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "49%",
+                    "top": "96%"
+                  },
+                  "entity": "camera.left_corner_fluent",
+                  "icon": "mdi:cctv"
+                },
+                {
+                  "type": "state-icon",
+                  "style": {
+                    "left": "95%",
+                    "top": "12%"
+                  },
+                  "entity": "camera.side_house_fluent",
+                  "icon": "mdi:cctv"
+                }
+              ],
+              "image": {
+                "media_content_id": "media-source://media_source/local/file_00000000e99c81fba08b5e77a94e3a5b.png",
+                "media_content_type": "image/png",
+                "metadata": {
+                  "title": "file_00000000e99c81fba08b5e77a94e3a5b.png",
+                  "thumbnail": null,
+                  "media_class": "image",
+                  "children_media_class": null,
+                  "navigateIds": [
+                    {},
+                    {
+                      "media_content_type": "app",
+                      "media_content_id": "media-source://media_source"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

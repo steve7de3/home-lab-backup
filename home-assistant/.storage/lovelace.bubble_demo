@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.bubble_demo",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Demo",
+          "path": "demo",
+          "icon": "mdi:chart-bubble",
+          "cards": [
+            {
+              "type": "markdown",
+              "content": "## Bubble Card demo\nTap a light button to switch it. **More lights** opens the bubble pop-up."
+            },
+            {
+              "type": "custom:bubble-card",
+              "card_type": "button",
+              "button_type": "switch",
+              "entity": "light.living_room_light_living_room_light",
+              "name": "Living Room",
+              "icon": "mdi:sofa",
+              "show_state": true
+            },
+            {
+              "type": "custom:bubble-card",
+              "card_type": "button",
+              "button_type": "switch",
+              "entity": "light.kitchen_light_kitchen_light",
+              "name": "Kitchen",
+              "icon": "mdi:stove",
+              "show_state": true
+            },
+            {
+              "type": "custom:bubble-card",
+              "card_type": "button",
+              "button_type": "button",
+              "name": "More lights",
+              "icon": "mdi:lightbulb-group",
+              "tap_action": {
+                "action": "navigate",
+                "navigation_path": "#demo-lights"
+              }
+            },
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "pop-up",
+                  "hash": "#demo-lights",
+                  "title": "More lights",
+                  "icon": "mdi:lightbulb-group"
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "switch",
+                  "entity": "light.bedroom_bedroom_lamp_1",
+                  "name": "Bedroom lamp",
+                  "icon": "mdi:lamp",
+                  "show_state": true
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "switch",
+                  "entity": "light.hue_smart_plug_1",
+                  "name": "Shop lights",
+                  "icon": "mdi:hammer-wrench",
+                  "show_state": true
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "switch",
+                  "entity": "light.garage_garage",
+                  "name": "Garage",
+                  "icon": "mdi:garage",
+                  "show_state": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

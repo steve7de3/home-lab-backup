@@ -1,0 +1,122 @@
+- id: '1792036431968'
+  alias: Shop lights on
+  description: ''
+  triggers:
+  - trigger: occupancy.detected
+    target:
+      entity_id: binary_sensor.spatial_multi_sensor_fp400_occupancy
+    options:
+      behavior: each
+      for: 00:00:00
+  conditions: []
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    target:
+      device_id: d0d88d76c2b99e481ace0d6421fc445a
+    data: {}
+  mode: single
+- id: '1792037073255'
+  alias: Shop lights off
+  description: ''
+  triggers:
+  - trigger: occupancy.cleared
+    target:
+      device_id: ee4631f8371b4f17f2442bdd545e3542
+    options:
+      behavior: each
+      for: 00:00:00
+  conditions: []
+  actions:
+  - action: light.turn_off
+    metadata: {}
+    target:
+      device_id: d0d88d76c2b99e481ace0d6421fc445a
+    data: {}
+  mode: single
+- id: jarvis_status_report
+  alias: Jarvis status report
+  description: 'Voice command: status report'
+  triggers:
+  - trigger: conversation
+    command:
+    - status report
+    - give me a status report
+    - house status
+    - what's the status
+  conditions: []
+  actions:
+  - set_conversation_response: '{% set condmap = {''partlycloudy'':''partly cloudy'',''clear-night'':''clear'',''mostlycloudy'':''mostly
+      cloudy''} %} {% set cond = condmap.get(states(''weather.forecast_home''), states(''weather.forecast_home''))
+      %} {% set lights_on = states.light | selectattr(''state'',''eq'',''on'') | map(attribute=''name'')
+      | list %} {% set people = [] %} {% if is_state(''binary_sensor.entryway_person'',''on'')
+      %}{% set people = people + [''the entryway''] %}{% endif %} {% if is_state(''binary_sensor.driveway_person'',''on'')
+      %}{% set people = people + [''the driveway''] %}{% endif %} {% set motion =
+      [] %} {% if is_state(''binary_sensor.entryway_motion'',''on'') %}{% set motion
+      = motion + [''the entryway''] %}{% endif %} {% if is_state(''binary_sensor.driveway_motion'',''on'')
+      %}{% set motion = motion + [''the driveway''] %}{% endif %} {% if is_state(''binary_sensor.garage_motion'',''on'')
+      %}{% set motion = motion + [''the garage''] %}{% endif %} Status report. It''s
+      {{ now().strftime(''%-I:%M %p'') }}. {% if lights_on %}Lights on: {{ lights_on
+      | join('', '') }}.{% else %}All the lights are off.{% endif %} {% if people
+      %}There''s someone at {{ people | join('' and '') }} right now. {% elif motion
+      %}There''s motion at {{ motion | join('' and '') }} right now. {% else %}No
+      visitors or motion around the house.{% endif %} {% if has_value(''sensor.front_door_last_activity'')
+      %}The front door was last active at {{ as_timestamp(states(''sensor.front_door_last_activity''))
+      | timestamp_custom(''%-I:%M %p'') }}.{% endif %} Outside it''s {{ state_attr(''weather.forecast_home'',''temperature'')
+      | round(0) | int }} degrees and {{ cond }}.'
+  mode: single
+- id: jarvis_morning_briefing
+  alias: Jarvis morning briefing
+  description: 'Voice command: good morning / morning briefing'
+  triggers:
+  - trigger: conversation
+    command:
+    - good morning
+    - morning briefing
+    - brief me
+  conditions: []
+  actions:
+  - action: weather.get_forecasts
+    target:
+      entity_id: weather.forecast_home
+    data:
+      type: daily
+    response_variable: fc
+    continue_on_error: true
+  - set_conversation_response: '{% set condmap = {''partlycloudy'':''partly cloudy'',''clear-night'':''clear'',''mostlycloudy'':''mostly
+      cloudy''} %} {% set h = now().hour %} {% set tj = state_attr(''sensor.shop_jobs'',''today_jobs'')
+      or [] %} {% set ad = state_attr(''sensor.shop_jobs'',''today_all_day'') or []
+      %} {% set lights_on = states.light | selectattr(''state'',''eq'',''on'') | list
+      %} Good {% if h < 12 %}morning{% elif h < 18 %}afternoon{% else %}evening{%
+      endif %}, Steve. It''s {{ now().strftime(''%-I:%M %p'') }} on {{ now().strftime(''%A,
+      %B'') }} {{ now().day }}. Right now it''s {{ state_attr(''weather.forecast_home'',''temperature'')
+      | round(0) | int }} degrees and {{ condmap.get(states(''weather.forecast_home''),
+      states(''weather.forecast_home'')) }}. {% if fc is defined and fc.get(''weather.forecast_home'')
+      and fc[''weather.forecast_home''].forecast %}Today expect {{ condmap.get(fc[''weather.forecast_home''].forecast[0].condition,
+      fc[''weather.forecast_home''].forecast[0].condition) }}, with a high of {{ fc[''weather.forecast_home''].forecast[0].temperature
+      | round(0) | int }} and a low of {{ fc[''weather.forecast_home''].forecast[0].templow
+      | round(0) | int }}.{% endif %} {% if tj %}You have {{ tj | length }} job{{
+      ''s'' if tj | length != 1 }} today: {{ tj | join(''; '') }}. {% else %}No jobs
+      on the calendar today.{% if state_attr(''sensor.shop_jobs'',''next_job_when'')
+      %} Your next job is {{ state_attr(''sensor.shop_jobs'',''next_job_when'') }}:
+      {{ state_attr(''sensor.shop_jobs'',''next_job_title'') }}.{% endif %}{% endif
+      %} {% if ad %}Also today: {{ ad | join('', '') }}.{% endif %} {% if lights_on
+      %}Heads up, {{ lights_on | length }} light{{ ''s are'' if lights_on | length
+      != 1 else '' is'' }} still on.{% else %}The house is quiet, all lights are off.{%
+      endif %}'
+  mode: single
+- id: '1793724438657'
+  alias: MrCool Heat 7:30 AM
+  description: Every day at 7:30 AM PT, turn on the Mr cool heat virtual outlet (Aqara
+    scene synced via Matter) - Hub M3 fires IR to the MrCool, designated state Heating.
+    Built by Melanie 2026-11-03, replacing the Aqara app schedule.
+  triggers:
+  - trigger: time
+    at: 07:30:00
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    target:
+      entity_id:
+      - switch.mr_cool_heat
+  mode: single
